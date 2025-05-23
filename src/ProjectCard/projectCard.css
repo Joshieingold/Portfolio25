@@ -1,0 +1,20 @@
+.project-card {
+    position: relative;
+    aspect-ratio: 0.7;
+    width: 20rem;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2.5rem;
+    border: 1px solid red;
+    overflow: hidden; /* Ensures the pseudo-element respects border radius */
+}
+
+
+
+.project-card > * {
+    position: relative;
+    z-index: 1;
+}

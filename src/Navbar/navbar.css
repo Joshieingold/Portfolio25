@@ -1,0 +1,54 @@
+.navbar {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    justify-content: space-between;
+    background-color: rgba(15, 15, 15, 0.466);
+    align-items: center;
+    height: 7vh;
+    position: absolute;
+    top: 0;
+    box-shadow: 10px 10px 10px  rgba(0, 0, 0, 0.171);
+}
+.menu {
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    justify-content: space-around;
+    
+}
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 2rem;
+    cursor: pointer;
+    background: -webkit-linear-gradient(#00f7ff, #0004ff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 700;
+    margin-left: 5vw;
+
+    
+}
+.logo:hover {
+    filter: drop-shadow(0 0 1em #000dc7);
+    transition:  0.8s;
+}
+.menu-item {
+    cursor: pointer;
+    color: white;
+    transition: 0.8s;
+    font-size: 1.0rem;
+    font-weight: 400;
+    border-bottom: 1px solid transparent;
+    border-radius: 0.2rem;
+}
+.menu-item:hover {
+    color: #00a2ff;
+    border-bottom: 1px solid #00a2ff;
+    transition:  0.2s;
+    border-radius: 0.2rem;
+}
