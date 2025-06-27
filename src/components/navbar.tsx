@@ -17,17 +17,14 @@ import clsx from "clsx";
 import { siteConfig } from "@/config/site";
 import { ThemeSwitch } from "@/components/theme-switch";
 import {
-  TwitterIcon,
   GithubIcon,
-  DiscordIcon,
   HeartFilledIcon,
-  SearchIcon,
 } from "@/components/icons";
 import { Logo } from "@/components/icons";
 
 export const Navbar = () => {
   const searchInput = (
-<div></div>
+      <div></div>
   );
 
   return (
@@ -72,17 +69,16 @@ export const Navbar = () => {
           </Link>
           <ThemeSwitch />
         </NavbarItem>
-        <NavbarItem className="hidden lg:flex">{searchInput}</NavbarItem>
         <NavbarItem className="hidden md:flex">
-          <Button
-            isExternal
+            <Button
             as={Link}
             className="text-sm font-normal text-default-600 bg-default-100"
             startContent={<HeartFilledIcon className="text-danger" />}
             variant="flat"
-          >
-           Contact 
-          </Button>
+            href="/contact"
+            >
+             Contact 
+            </Button>
         </NavbarItem>
       </NavbarContent>
 
