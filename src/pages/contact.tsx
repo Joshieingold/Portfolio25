@@ -11,7 +11,8 @@ export default function ContactPage() {
         <div className="inline-block max-w-lg text-center justify-center">
           <h1 className={title()}>Contact Me</h1>
         </div>
-        <Form validationBehavior="aria">
+        <Form validationBehavior="aria"
+        className="flex items-center justify-center">
             <Input
             isRequired
             name="email"

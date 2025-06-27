@@ -20,7 +20,7 @@ export default function IndexPage() {
 
         <div className="flex gap-3">
           <Link
-            isExternal className={buttonStyles({ color: "primary", radius: "full", variant: "shadow", })} > Contact
+            isExternal className={buttonStyles({ color: "primary", radius: "full", variant: "shadow" }) + " cursor-pointer"} > Contact
           </Link>
           <Link
             isExternal className={buttonStyles({ variant: "bordered", radius: "full" })} href={siteConfig.links.github} >
