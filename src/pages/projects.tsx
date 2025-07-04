@@ -6,7 +6,7 @@ import ProjectCard from "@/components/projectCard";
 export default function ProjectsPage() {
   return (
     <DefaultLayout>
-  <section className="flex flex-col items-center justify-around gap-4 py-8 md:py-10">
+  <section className="flex flex-col items-center justify-around gap-4 py-8 md:py-10 color-blue-900">
     {/* Heading with spacing */}
     <h1 className={`${title()} mb-6`}>Projects</h1>
 
