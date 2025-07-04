@@ -9,6 +9,7 @@ import {
   useDisclosure,
   Button,
 } from "@heroui/react";
+import { button as buttonStyles } from "@heroui/theme";
 import React from "react";
 import { Github } from "lucide-react";
 
@@ -126,7 +127,7 @@ export default function ProjectCard({
 
           {/* Status replaced with button */}
           <div className="mt-4 w-full flex justify-start">
-            <Button size="sm" variant="bordered" onClick={onOpen} className="hover:bg-blue-500 hover:text-stone-100">
+            <Button size="sm" variant="bordered" onClick={onOpen} className={buttonStyles({ color: "primary", radius: "full" }) + " cursor-pointer"} >
               View Details
             </Button>
           </div>
@@ -142,7 +143,7 @@ export default function ProjectCard({
           body: "py-6",
           backdrop: "bg-[#292f46]/50 backdrop-opacity-40",
           // Updated Modal background colors
-          base: "border-[#292f46] bg-blue-100 dark:bg-gray-900 text-gray-900 dark:text-gray-100 rounded-xl",
+          base: "border-[#292f46] bg-gray-100 dark:bg-gray-950 text-gray-900 dark:text-gray-100 rounded-xl",
         }}
       >
         <ModalContent>
