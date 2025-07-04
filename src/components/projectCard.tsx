@@ -59,7 +59,11 @@ export default function ProjectCard({
 
   return (
     <>
-      <Card className="py-3 px-4 flex flex-col gap-2 items-start max-w-md shadow-md hover:shadow-lg transition">
+      {/* Updated Card background colors */}
+      <Card
+        className="py-3 px-4 flex flex-col gap-2 items-start max-w-md shadow-lg hover:shadow-xl transition
+                   bg-neutral-100 dark:bg-gray-800 text-gray-900 dark:text-gray-100 rounded-xl" // Changed light mode background to bg-blue-300
+      >
         <div className="w-full flex justify-center">
           {!isLoaded ? (
             <Skeleton className="w-[250px] h-[150px] rounded-xl" />
@@ -89,7 +93,7 @@ export default function ProjectCard({
               return (
                 <div
                   key={tech}
-                  className={`text-xs font-medium px-2 py-1 rounded ${info.color}`}
+                  className={`text-xs font-medium px-2 py-1 rounded ${info.color} text-stone-50`}
                 >
                   {info.label}
                 </div>
@@ -123,7 +127,7 @@ export default function ProjectCard({
 
           {/* Status replaced with button */}
           <div className="mt-4 w-full flex justify-start">
-            <Button size="sm" variant="bordered" onClick={onOpen}>
+            <Button size="sm" variant="bordered" onClick={onOpen} className="hover:bg-blue-500 hover:text-stone-100">
               View Details
             </Button>
           </div>
@@ -138,7 +142,8 @@ export default function ProjectCard({
         classNames={{
           body: "py-6",
           backdrop: "bg-[#292f46]/50 backdrop-opacity-40",
-          base: "border-[#292f46] bg-[#19172c] dark:bg-[#19172c] text-[#a8b0d3]",
+          // Updated Modal background colors
+          base: "border-[#292f46] bg-blue-100 dark:bg-gray-900 text-gray-900 dark:text-gray-100 rounded-xl",
         }}
       >
         <ModalContent>
@@ -151,6 +156,7 @@ export default function ProjectCard({
                 className="object-cover rounded-xl mb-4 w-30"
                 src={modalImageSrc}
                 width={350}
+                height={170} // Changed height to 170 for consistency
               />
             )}
 

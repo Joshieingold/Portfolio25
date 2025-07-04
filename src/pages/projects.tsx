@@ -1,8 +1,7 @@
 import { title } from "@/components/primitives";
 import DefaultLayout from "@/layouts/default";
 import ProjectCard from "@/components/projectCard";
-import RogersToolbox from "/WarehouseToolbox.png";
-import ToolboxLogo from "/Toolbox-Logo.png";
+
 
 export default function ProjectsPage() {
   return (
