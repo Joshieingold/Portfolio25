@@ -33,7 +33,6 @@ export default function ProjectCard({
   techStack = [],
   github,
   website,
-  status,
 }: ProjectCardProps) {
   const [isLoaded, setIsLoaded] = React.useState(false);
   const { isOpen, onOpen, onClose } = useDisclosure();
