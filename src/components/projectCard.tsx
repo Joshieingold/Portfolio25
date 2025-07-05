@@ -8,10 +8,12 @@ import {
   ModalContent,
   useDisclosure,
   Button,
+  Divider
 } from "@heroui/react";
 import { button as buttonStyles } from "@heroui/theme";
 import React from "react";
 import { Github } from "lucide-react";
+
 
 type ProjectCardProps = {
   imageSrc: string;
@@ -39,7 +41,7 @@ export default function ProjectCard({
   const { isOpen, onOpen, onClose } = useDisclosure();
 
   React.useEffect(() => {
-    const timer = setTimeout(() => setIsLoaded(true), 1000);
+    const timer = setTimeout(() => setIsLoaded(true), 0);
     return () => clearTimeout(timer);
   }, []);
 
@@ -77,11 +79,11 @@ export default function ProjectCard({
             />
           )}
         </div>
-
+        <Divider/>
         <CardHeader className="pt-2 px-0 flex-col items-start w-full">
           <h4 className="text-xl font-light mb-1">{title}</h4>
           <p className="text-sm text-default-500 mb-2">{text}</p>
-
+            <Divider className="mb-2"/>
           {/* Tech stack badges */}
           <div className="flex flex-wrap gap-2 mb-2">
             {techStack.map((tech) => {
@@ -125,7 +127,6 @@ export default function ProjectCard({
             )}
           </div>
 
-          {/* Status replaced with button */}
           <div className="mt-4 w-full flex justify-start">
             <Button size="sm" variant="bordered" onClick={onOpen} className={buttonStyles({ color: "primary", radius: "full" }) + " cursor-pointer"} >
               View Details
@@ -143,7 +144,7 @@ export default function ProjectCard({
           body: "py-6",
           backdrop: "bg-[#292f46]/50 backdrop-opacity-40",
           // Updated Modal background colors
-          base: "border-[#292f46] bg-gray-100 dark:bg-gray-950 text-gray-900 dark:text-gray-100 rounded-xl",
+          base: "border-[#292f46] bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-gray-100 rounded-xl",
         }}
       >
         <ModalContent>

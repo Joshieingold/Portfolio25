@@ -15,7 +15,7 @@ export default function ProjectsPage() {
 <ProjectCard
   imageSrc="/Toolbox-Logo.png"
   modalImageSrc="/WarehouseToolbox.png"
-  title="Warehouse Toolbox"
+  title="AutoBox 4"
   text="An all in one Warehouse Automation Tool"
   techStack={["csharp", "bash", "firebase"]}
   github="https://github.com/Joshieingold/Rogers-Toolbox-4"
