@@ -24,7 +24,7 @@ export const Logo: React.FC<IconSvgProps> = ({
       fontWeight="bold"
       dominantBaseline="middle"
     >
-      &lt;J/L&gt;
+      J/L
     </text>
   </svg>
 );

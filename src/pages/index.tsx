@@ -7,7 +7,7 @@ import { GithubIcon } from "@/components/icons";
 import DefaultLayout from "@/layouts/default";
 import { Button, Divider } from "@heroui/react";
 import LanguageCard from "@/components/languageCard";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 export default function IndexPage() {
   const [languageView, setLanguageView] = useState("Front-End");

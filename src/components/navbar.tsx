@@ -17,7 +17,6 @@ import { siteConfig } from "@/config/site";
 import { ThemeSwitch } from "@/components/theme-switch";
 import {
   GithubIcon,
-  HeartFilledIcon,
 } from "@/components/icons";
 import { Logo } from "@/components/icons";
 
@@ -35,7 +34,7 @@ export const Navbar = () => {
             color="foreground"
             href="/"
           >
-            <Logo />
+           <h1 className="text-lg font-bold">J/L</h1> 
           </Link>
         </NavbarBrand>
         <div className="hidden lg:flex gap-4 justify-start ml-2">
@@ -72,11 +71,10 @@ export const Navbar = () => {
             <Button
             as={Link}
             className="text-sm font-normal text-default-600 bg-default-100"
-            startContent={<HeartFilledIcon className="text-danger" />}
             variant="flat"
             href="/contact"
             >
-             Contact 
+             Contact Me 
             </Button>
         </NavbarItem>
       </NavbarContent>
@@ -93,21 +91,15 @@ export const Navbar = () => {
         {searchInput}
         <div className="mx-4 mt-2 flex flex-col gap-2">
           {siteConfig.navMenuItems.map((item, index) => (
-            <NavbarMenuItem key={`${item}-${index}`}>
-              <Link
-                color={
-                  index === 2
-                    ? "primary"
-                    : index === siteConfig.navMenuItems.length - 1
-                      ? "danger"
-                      : "foreground"
-                }
-                href="#"
-                size="lg"
-              >
-                {item.label}
-              </Link>
-            </NavbarMenuItem>
+        <NavbarMenuItem key={`${item}-${index}`}>
+          <Link
+            color="foreground"
+            href={item.href}
+            size="lg"
+          >
+            {item.label}
+          </Link>
+        </NavbarMenuItem>
           ))}
         </div>
       </NavbarMenu>
