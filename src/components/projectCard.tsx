@@ -67,9 +67,10 @@ export default function ProjectCard({
     <>
       {/* Updated Card background colors */}
       <Card
-        className="py-3 px-4 flex flex-col gap-2 items-start max-w-xs shadow-lg hover:shadow-xl transition
-                   bg-neutral-100 dark:bg-gray-800 text-gray-900 dark:text-gray-100 rounded-xl" // Changed light mode background to bg-blue-300
-      >
+  className="py-3 px-4 flex flex-col gap-2 items-start max-w-xs shadow-lg hover:shadow-xl transition
+             bg-neutral-100 dark:bg-gray-800 text-gray-900 dark:text-gray-100 rounded-xl min-h-[420px]"
+>
+
         <div className="w-full flex justify-center">
           {!isLoaded ? (
             <Skeleton className="w-[150px] h-[150px] rounded-xl" />
