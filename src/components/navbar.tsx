@@ -18,7 +18,6 @@ import { ThemeSwitch } from "@/components/theme-switch";
 import {
   GithubIcon,
 } from "@/components/icons";
-import { Logo } from "@/components/icons";
 
 export const Navbar = () => {
   const searchInput = (
