@@ -11,7 +11,7 @@ export default function ProjectsPage() {
     <h1 className={`${title()} mb-6`}>Projects</h1>
 
     {/* Project grid */}
-    <div className="gap-6 grid grid-cols-1 lg:grid-cols-2 px-4 w-full max-w-6xl">
+    <div className="gap-6 grid grid-cols-1 lg:grid-cols-4 px-4 w-full max-w-6xl">
 <ProjectCard
   imageSrc="/Toolbox-Logo.png"
   modalImageSrc="/WarehouseToolbox.png"
@@ -29,6 +29,42 @@ export default function ProjectsPage() {
 📊 Live database-backed stats and tracking.
 ⚙️ Fully customizable to fit diverse operational workflows.
 Ideal for automating repetitive tasks and enhancing data-driven warehouse operations.`}
+/>
+<ProjectCard
+  imageSrc="/OrderlinkLogo.png"
+  modalImageSrc="xxx"
+  title="OrderLink"
+  text="An all in one order tracking and efficeiency management software."
+  techStack={["electron", "firebase", "react", "html", "css"]}
+  modalText="this is temp."
+  status="live"
+  github="https://github.com/Joshieingold/Order-Link"
+  website="https://example.com"
+
+/>
+<ProjectCard
+  imageSrc="/ChessSharp.png"
+  modalImageSrc="xxx"
+  title="ChessSharp"
+  text="A personal games database and trainer for chess"
+  techStack={["csharp"]}
+  modalText="this is temp."
+  status="In Progress"
+  github="https://github.com/Joshieingold/ChessSharp"
+  website="https://example.com"
+
+/>
+<ProjectCard
+  imageSrc="/GoWithFriendLogo.png"
+  modalImageSrc="xxx"
+  title="Go With Friends"
+  text="An app for local games of Go."
+  techStack={["javascript", "react", "html", "css"]}
+  modalText="this is temp."
+  status="In Progress"
+  github="https://github.com/Joshieingold/GoWithFriends"
+  website="https://gowithfriends-jl.netlify.app/"
+
 />
 
     </div>

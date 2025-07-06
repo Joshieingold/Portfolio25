@@ -66,11 +66,11 @@ export default function DocsPage() {
             </div>
           </div>
           <div className="text-center md:text-left">
-            <p>
-              Hi, I’m Joshua Lynch — a self-taught software developer with a passion for building practical tools that solve real problems. I currently work at Rogers in a warehouse role, but I’ve gone beyond my job description by developing internal applications that have significantly improved our workflow. My background may not be traditional — no formal CS degree — but I’ve built powerful tools from the ground up. I’m fluent in many different programming lanagauges but most of all I’m driven by curiosity, real-world utility, and a love for efficient systems. I’m always learning, and always building.
+            <p className="text-center">
+              Hi, I’m Joshua Lynch<br></br> I'm a self-taught software developer with a passion for building practical tools that solve real problems. I currently work at Rogers in a warehouse role, but I’ve gone beyond my job description by developing internal applications that have significantly improved our workflow. My background may not be traditional — no formal CS degree — but I’ve built powerful tools from the ground up. I’m fluent in many different programming lanagauges but most of all I’m driven by curiosity, real-world utility, and a love for efficient systems. I’m always learning, and always building.
             </p>
             <br />
-            <p>
+            <p className="text-center">
               Outside of coding, I’m an 1800-rated chess player and have hosted a Canadian Federation of Chess tournament. I also enjoy tackling algorithmic challenges and currently rank 22 on my former university’s Kattis leaderboard. Whether it's through code, strategy, or competition, I love working on things that challenge me to think deeply and grow.
             </p>
           </div>

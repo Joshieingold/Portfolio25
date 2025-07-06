@@ -49,7 +49,8 @@ export default function ProjectCard({
 
   // Safe keys, readable labels
   const techMap: Record<string, { label: string; color: string }> = {
-    react: { label: "React", color: "bg-[#BAD5F5]" },
+    react: { label: "React", color: "bg-blue-500" },
+    electron: {label: "Electron:", color: "bg-sky-400"},
     express: { label: "Express", color: "bg-[#F2C986]" },
     node: { label: "Node", color: "bg-[#E1C1C1]" },
     python: { label: "Python", color: "bg-[#EADD86]" },
@@ -57,24 +58,27 @@ export default function ProjectCard({
     firebase: { label: "Firebase", color: "bg-[#e69138]" },
     csharp: { label: "C#", color: "bg-[#674ea7]" }, // Safe key for C#
     bash: { label: "Bash", color: "bg-[#444444]" },
+    javascript: {label: "JavaScript", color: "bg-amber-300"},
+    html: {label: "HTML", color: "bg-orange-400"},
+    css: {label: "CSS", color: "bg-blue-400"}
   };
 
   return (
     <>
       {/* Updated Card background colors */}
       <Card
-        className="py-3 px-4 flex flex-col gap-2 items-start max-w-md shadow-lg hover:shadow-xl transition
+        className="py-3 px-4 flex flex-col gap-2 items-start max-w-xs shadow-lg hover:shadow-xl transition
                    bg-neutral-100 dark:bg-gray-800 text-gray-900 dark:text-gray-100 rounded-xl" // Changed light mode background to bg-blue-300
       >
         <div className="w-full flex justify-center">
           {!isLoaded ? (
-            <Skeleton className="w-[250px] h-[150px] rounded-xl" />
+            <Skeleton className="w-[150px] h-[150px] rounded-xl" />
           ) : (
             <Image
               alt="Card background"
               className="object-cover rounded-xl transition-opacity duration-300"
               src={imageSrc}
-              width={250}
+              width={150}
               height={150}
             />
           )}
