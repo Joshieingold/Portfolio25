@@ -50,7 +50,7 @@ export default function ProjectCard({
   // Safe keys, readable labels
   const techMap: Record<string, { label: string; color: string }> = {
     react: { label: "React", color: "bg-blue-500" },
-    electron: {label: "Electron:", color: "bg-sky-400"},
+    electron: {label: "Electron", color: "bg-sky-400"},
     express: { label: "Express", color: "bg-[#F2C986]" },
     node: { label: "Node", color: "bg-[#E1C1C1]" },
     python: { label: "Python", color: "bg-[#EADD86]" },
@@ -66,9 +66,9 @@ export default function ProjectCard({
   return (
     <>
       {/* Updated Card background colors */}
-      <Card
-  className="py-3 px-4 flex flex-col gap-2 items-start max-w-xs shadow-lg hover:shadow-xl transition
-             bg-neutral-100 dark:bg-gray-800 text-gray-900 dark:text-gray-100 rounded-xl min-h-[420px]"
+      <Card isHoverable
+  className="py-3 px-4 flex flex-col justify-between gap-2 items-start max-w-xs shadow-lg hover:shadow-xl transition
+             bg-neutral-100 dark:bg-gray-800 text-gray-900 dark:text-gray-100 rounded-xl min-h-[420px] h-[420px]"
 >
 
         <div className="w-full flex justify-center">
@@ -90,23 +90,23 @@ export default function ProjectCard({
           <p className="text-sm text-default-500 mb-2">{text}</p>
             <Divider className="mb-2"/>
           {/* Tech stack badges */}
-          <div className="flex flex-wrap gap-2 mb-2">
+            <div className="flex gap-2 mb-2 flex-wrap w-full">
             {techStack.map((tech) => {
               const key = tech.toLowerCase();
               const info = techMap[key] || {
-                label: tech,
-                color: "bg-gray-200",
+              label: tech,
+              color: "bg-gray-200",
               };
               return (
-                <div
-                  key={tech}
-                  className={`text-xs font-medium px-2 py-1 rounded ${info.color} text-stone-50`}
-                >
-                  {info.label}
-                </div>
+              <div
+                key={tech}
+                className={`text-xs font-medium px-2 py-1 rounded ${info.color} text-stone-50 whitespace-nowrap`}
+              >
+                {info.label}
+              </div>
               );
             })}
-          </div>
+            </div>
 
           {/* Links */}
           <div className="flex gap-3 text-sm mt-1">
