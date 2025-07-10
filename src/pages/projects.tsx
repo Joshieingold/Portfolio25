@@ -50,7 +50,7 @@ Key Features:
 />
 <ProjectCard
   imageSrc="/ChessSharp.png"
-  modalImageSrc="xxx"
+  modalImageSrc="/chesssharppic.png"
   title="ChessSharp"
   text="A personal games database and trainer for chess"
   techStack={["csharp"]}
@@ -80,9 +80,7 @@ Key Features:
   status="In Progress"
   github="https://github.com/Joshieingold/GoWithFriends"
   website="https://gowithfriends-jl.netlify.app/"
-
 />
-
     </div>
   </section>
 </DefaultLayout>
