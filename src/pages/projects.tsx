@@ -32,7 +32,7 @@ Ideal for automating repetitive tasks and enhancing data-driven warehouse operat
 />
 <ProjectCard
   imageSrc="/OrderlinkLogo.png"
-  modalImageSrc="xxx"
+  modalImageSrc="/orderlink.png"
   title="OrderLink"
   text="An all in one order tracking and efficeiency management software."
   techStack={["electron", "firebase", "react"]}
