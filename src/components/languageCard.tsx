@@ -12,7 +12,6 @@ export default function LanguageCard({
 }: LanguageCardProps) {
     return (
         <>
-        
                 <Card shadow="sm" isHoverable className="flex p-5">
                     <Image
                     alt="Card background"

@@ -67,7 +67,7 @@ Key Features:
 />
 <ProjectCard
   imageSrc="/GoWithFriendLogo.png"
-  modalImageSrc="xxx"
+  modalImageSrc="/gowithfriends.png"
   title="Go With Friends"
   text="An app for local games of Go."
   techStack={["javascript", "react", "html", "css"]}
