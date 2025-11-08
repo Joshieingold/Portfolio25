@@ -15,7 +15,7 @@ export default function DocsPage() {
               alt="Profile photo"
               className="object-cover rounded-full"
               src={
-                "https://media.licdn.com/dms/image/v2/D5603AQHLPgxnuW79DA/profile-displayphoto-shrink_400_400/B56ZTUlRnWGoAg-/0/1738733329542?e=1757548800&v=beta&t=AAPhbVBGpQY17mMY9YClBWap7-Wkfelb8ZWR01pfLjU"
+                "https://avatars.githubusercontent.com/u/149664064?v=4"
               }
               width={300}
               height={300}
